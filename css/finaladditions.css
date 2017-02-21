@@ -1,0 +1,37 @@
+.snippet{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snippet__thumbnail > img{
+  width: 100%;
+}
+
+.snippet__title{
+  order: 0;
+  width: 100%;
+  margin: 0 0 0.5em;
+}
+
+.snippet__thumbnail{
+  order: 1;
+  width: 30%;
+}
+
+.snippet__description{
+  order: 2;
+  width: 70%;
+
+}
+
+@media screen and (max-width:450px) {
+  .snippet__title{
+
+  }
+  .snippet__thumbnail{
+    display:none;
+  }
+  .snippet__description{
+    width:100%;
+  }
+}
